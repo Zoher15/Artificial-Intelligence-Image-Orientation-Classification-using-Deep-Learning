@@ -7,11 +7,32 @@
 
 # I've used a simple decision stump. Randomly picked two pixel values from every image
 # of the training dataset and checked which one is greater. I've done this for all the images and taken a vote. 
-# The same thing is done during testing. 
+# The same thing is done during testing.
+
+# The code contains two important functons, 1 for training (decision_stumps()) and the other for testing (test_adaboost() ).
+
 # I have implemented the "one vs one" model. I have six models, 0-90, 0-180,0-270,90-180 and so on for every class. 
 # During testing, a vote of all these models is taken and the orientation with the highest vote is assigned to the testing image.
 
-# Unfortunately, even after 5 long and agonizing days of debugging and multiple attempts of rewriting the code our accuracy still stands at a number close to 25%. 
+# At first, I have classified the data into six sub-datasets. First dataset contains only 0-90 orientation images, the second 0-180
+# and so on.
+
+# These datasets are then used to compare the pixel values and get a vote.
+
+# Later, I write, 1. the features used, 2. alpha values and 3. the predcited values of all the 6 models into the mode_file.txt file.
+
+# This file is then read into and passed to the testing function.
+
+# The test_adaboost function takes input as the model file generated during training and the test file passed as a parameter from terminal.
+
+# The function then compares the same two features (Pixel values) used during training and checks which feature is greater.
+
+# Assigns an orientation accordingly. 
+
+# This is done for each model and then a vote is taken across 6 models. The highest vote is the predicted orientation.
+
+# Unfortunately, even after 5 long and agonizing days of debugging and multiple attempts of rewriting the code our accuracy still stands
+# at a number close to 25%. 
 
 
 import numpy as np
