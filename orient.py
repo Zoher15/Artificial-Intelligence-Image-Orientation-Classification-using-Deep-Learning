@@ -1,7 +1,7 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 #
-from orient_knn import *
-from orient_nnet import *
+#from orient_knn import *
+#from orient_nnet import *
 from orient_adaboost import *
 import sys
 
@@ -11,7 +11,7 @@ def main():
         knn_main(parameter, t_fname, model_fname)
     elif (model == "nnet"):
         neural_net(parameter, t_fname, model_fname)
-    elif (model == "adaboost")
+    elif (model == "adaboost"):
         adaboost(parameter, t_fname, model_fname)
     elif (model == "best"):
         neural_net(parameter, t_fname, model_fname)
