@@ -9,6 +9,8 @@
 # of the training dataset and checked which one is greater. I've done this for all the images and taken a vote. 
 # The same thing is done during testing.
 
+# I've used 10 classifiers to predict the orientation of an image.
+
 # The code contains two important functons, 1 for training (decision_stumps()) and the other for testing (test_adaboost() ).
 
 # I have implemented the "one vs one" model. I have six models, 0-90, 0-180,0-270,90-180 and so on for every class. 
