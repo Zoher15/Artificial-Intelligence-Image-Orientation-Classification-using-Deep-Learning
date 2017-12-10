@@ -36,7 +36,7 @@
 # Unfortunately, even after 5 long and agonizing days of debugging and multiple attempts of rewriting the code our accuracy still stands
 # at a number close to 25%. 
 
-# Initially, the model_file is named model_file_adaboost.txt (To avoid collision with model file of other classifiers), however, while training you can give your own model file name and test it during testing with the new file name.
+# Note: Initially, the model_file is named model_file_adaboost.txt (To avoid collision with model file of other classifiers), however, while training you can give your own model file name and test it during testing with the new file name.
 
 
 import numpy as np
