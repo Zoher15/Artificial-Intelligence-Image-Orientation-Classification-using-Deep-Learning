@@ -20,14 +20,16 @@ neurons(hidden layer)		alpha		train_accuracy		test_accuracy
 I was initially trying to build stochastic gradient but it was too slow and testing could not be as fast as I wanted. Plus I had a huge bug 
 where I was not initializing the weights from -0.5 to 0.5. For a whole week I was getting 25% accuracy.
 
-Then I decided to look methods to implemement full batch gradient descent. Found it to be better. But still no luck with accuracy.
+Then I decided to look methods to implemement full batch gradient descent. Found it to be better. But still no luck with accuracy.Stuck at 25%
+Tried Normalization. Tried shuffling of training data. Tried all kinds of complicated things. Nothing worked. (Why would it, this was simpler than I thought)
 
-Then after finally giving up I tried to implement XOR using the same code. AND IT WORKED!
-First positive sign after two weeks.
-So I persisted. Still did not get the accuracy.
-Finally due to useful discussions with Aishwarya my net started throwing results above 25%
-I started with 4 neurons which was giving me great accuracy btw!70% on train
-But while testing (due to random initialization) the code would produce only 40% accuracy. Rare but worrying
+Then after finally giving up I tried to go back to basics and I tried implement XOR using the same code. AND IT WORKED!
+First positive sign after two weeks, HURRAY! I implemented the mighty XOR after two weeks
+
+So I persisted with different alphas and different neurons. Still stuck at 25% (random guess basically).
+Finally due to useful discussions with Aishwarya, I changed my weight initialization and my net started throwing results above 25%
+I started with 4 neurons which was giving me great accuracy btw: 70% on train!
+But while testing (due to random initialization) 4 neurons would occasionally produce only 40% accuracy. Rare but worrying
 So I increased it to 5 neurons, much more stable even with rigorous testing.
 Tried increasing neurons but did not improve my accuracy. So stuck with 5.
 '''
