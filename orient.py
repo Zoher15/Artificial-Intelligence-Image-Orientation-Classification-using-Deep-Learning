@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
-#from orient_knn import *
-#from orient_nnet import *
+from orient_knn import *
+from orient_nnet import *
 from orient_adaboost import *
 import sys
 

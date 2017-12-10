@@ -126,7 +126,7 @@ def neural_net(parameter, t_fname, model_fname):
 		a_output=accuracy_converter(a_output)
 		#counting accuracy in term x
 		x=np.sum(test_converted_output==a_output)
-		print "Test Accuracy:",float(x)*100/number_of_test,"%"
+		print ("Test Accuracy:",float(x)*100/number_of_test,"%")
 		a_output=back_converter(a_output,number_of_test)
 		test_names=np.transpose(np.asmatrix(test_names))
 		tofile=np.hstack((test_names,a_output))

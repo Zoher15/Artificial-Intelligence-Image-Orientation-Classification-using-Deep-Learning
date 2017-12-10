@@ -10,7 +10,8 @@ import numpy as np
 # K-nearest for value of K = 30
 def knn_vectorized(test_data, data, k, expected_outputs):
     distances = cdist(data, test_data)
-    idx = np.argpartition(distances, k, axis=0)[:k]
+    #idx = np.argpartition(distances, k, axis=0)[:k]i
+    idx = distances.argsort(axis=0)[:k]
     nearest_dists = np.take(expected_outputs, idx)
     out = mode(nearest_dists,axis=0)[0]
     return out
