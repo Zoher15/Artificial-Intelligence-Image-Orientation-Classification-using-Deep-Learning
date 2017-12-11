@@ -11,6 +11,7 @@ People whose words/tips I am grateful for: Aishwarya Dhage, Pulkit Maloo, Vaibha
 neurons(hidden layer)		alpha		train_accuracy		test_accuracy
 	4			0.0001		72%			70%
 	4			0.001		68%			65%
+	5			0.00001		75%			70.5%
 	5			0.0001		72%			70%
 	6			0.001		70%			67%
 	8			0.001		70%			68%
@@ -73,9 +74,9 @@ def neural_net(parameter, t_fname, model_fname):
 		train_data=(train[:,2:].astype(np.float))
 		train_converted_output=accuracy_converter(train_expected_output)
 		#setting parameters
-		epochs=1000
+		epochs=5000
 		#magic number
-		alpha=0.0001
+		alpha=0.00001
 		input_neurons=192
 		#sign of simplicity: 5 neurons
 		hidden_neurons=5
