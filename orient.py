@@ -14,7 +14,7 @@ def main():
     elif (model == "adaboost"):
         adaboost(parameter, t_fname, model_fname)
     elif (model == "best"):
-        knn_main(parameter, t_fname, model_fname)
+        neural_net(parameter, t_fname, model_fname)
 
 if __name__== "__main__":
   main()
