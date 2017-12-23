@@ -8,22 +8,16 @@ A dataset of images from the Flickr photo sharing website. The images were taken
 Data and Supervision by **David Crandall**
 
 # Part 1: KNN
-**Goal**: At test time, for each image to be classified, the program finds the k "nearest" images in the training file, i.e. the ones with the closest distance (least vector difference) in Euclidean space, and have them vote on the correct orientation.
-
-**Approach:**
+At test time, for each image to be classified, the program finds the k "nearest" images in the training file, i.e. the ones with the closest distance (least vector difference) in Euclidean space, and have them vote on the correct orientation.
 
 Code by **Ankita Alshi**
 
 # Part 2: AdaBoost
-**Goal:** Use very simple decision stumps that simply compare one entry in the image matrix to another, e.g. compare the red pixel at position 1,1 to the green pixel value at position 3,8.
-
-**Approach:**
+Used very simple decision stumps that simply compare one entry in the image matrix to another, e.g. compare the red pixel at position 1,1 to the green pixel value at position 3,8.
 
 Code by **Murtaza Khambaty**
 
 # Part 3: Neural Networks
-**Goal:** A fully-connected feed-forward network to classify image orientation, and implement the backpropagation algorithm to train the network using gradient descent.
-
-**Approach:**
+A fully-connected feed-forward network to classify image orientation, and implements the backpropagation algorithm to train the network using gradient descent.
 
 Code by **Zoher Kachwala**
